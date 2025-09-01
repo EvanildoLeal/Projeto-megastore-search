@@ -1,0 +1,18 @@
+# Arquivos de compilação do Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# Backups
+backup_*/
+backup_final_*/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

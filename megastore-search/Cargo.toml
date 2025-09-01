@@ -1,0 +1,14 @@
+[package]
+name = "megastore-search"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Crates para potencial expansão do sistema
+serde = { version = "1.0", features = ["derive"] }  # Para serialização
+rand = "0.8.5"                                     # Para geração de dados de teste
+lru = "0.12.5"                                     # Para implementação de cache (LRU)
+rayon = "1.11.0"                                   # Para processamento paralelo
+
+[dev-dependencies]
+criterion = "0.5.1"                                # Para benchmarks de performance
