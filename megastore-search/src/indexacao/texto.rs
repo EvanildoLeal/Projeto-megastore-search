@@ -13,6 +13,7 @@ impl ProcessadorTexto {
             .collect()
     }
 
+    #[allow(dead_code)]  // ← ADICIONE ESTA LINHA
     pub fn processar_termo(&self, termo: &str) -> String {
         termo.to_lowercase().trim().to_string()
     }
