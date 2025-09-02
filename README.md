@@ -89,6 +89,45 @@ cargo install cargo-tarpaulin
 # Executar testes com cobertura
 cargo tarpaulin --ignore-tests
 
+# Testes do Motor de Busca
+cargo test busca::motor::tests::test_capacidade_maxima
+
+# Testes de Indexação Inversa:
+cargo test indexacao::inverso::tests::test_busca_inexistente
+cargo test indexacao::inverso::tests::test_indexacao_busca
+
+# Testes de Métricas:
+cargo test metricas::tests::test_multiplas_metricas
+cargo test metricas::tests::test_registro_metricas
+
+# Testes de Produto:
+cargo test modelos::produto::tests::test_clone_produto
+cargo test modelos::produto::tests::test_criacao_produto
+
+# Para executar grupos de testes:
+### 1. Todos os testes de busca:
+cargo test busca
+
+### 2. Todos os testes de indexação:
+cargo test indexacao
+
+### 3. Todos os testes de métricas:
+cargo test metricas
+
+### 4. Todos os testes de modelos:
+cargo test modelos
+
+### 5. Todos os testes (recomendado):
+cargo test
+
+# Exemplo prático:
+
+### Executa apenas os testes de indexação
+cargo test indexacao
+
+### Executa apenas os testes de produto
+cargo test modelos::produto
+
 # Exemplos de Uso
 
 ## Consultas Básicas
