@@ -44,7 +44,8 @@ impl IndiceInverso {
         }
     }
 
-    pub fn buscar_no_indice(&self, termo: &str, indice: &HashMap<String, HashSet<u32>>) -> HashSet<u32> {
+    #[allow(dead_code)]  // ← ADICIONE ESTA LINHA
+    pub fn buscar_no_indice(&self, termo: &str, indice: &HashMap<String, HashSet<u32>>) -> HashSet<u32>{
         let token = self.processador.processar_termo(termo);
         indice.get(&token).cloned().unwrap_or_else(HashSet::new)
     }
