@@ -75,15 +75,15 @@ cargo test test_indexacao
 # Testes com output detalhado
 cargo test -- --nocapture
 
-Testes de Integração
-# Testes de integração na pasta tests/
+# Testes de Integração
+## Testes de integração na pasta tests/
 cargo test --test integration_tests
 
 # Testes de desempenho com criterion
 cargo bench
 
-Testes com Cobertura
-# Instalar ferramenta de cobertura
+# Testes com Cobertura
+### Instalar ferramenta de cobertura
 cargo install cargo-tarpaulin
 
 # Executar testes com cobertura
@@ -211,3 +211,7 @@ Use Clippy para verificar best practices
 Escreva testes para novas funcionalidades
 
 Documente APIs públicas
+
+## Licença
+
+### Permissão para uso Educacional
